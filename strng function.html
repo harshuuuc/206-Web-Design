@@ -1,0 +1,126 @@
+<!__ string function__>
+<html>
+<head>
+<style>
+.table{
+    align-items:center;
+	justify-content:center;
+}
+</style>
+<script>
+
+function charat()
+{
+     str="hello";
+	 alert("The charat() returns the charecter of given index 3 in hello is =" + str.charAt(3));
+}
+function concat()
+{
+     str="hello";
+	 str2="imrd";
+	 alert("It combin two string" + "\n" +"Friststring:hellow" +"second string: imrd"+"\n=" +    str.concat(str2));
+}
+function indexof()
+{
+     str="hello";
+	 alert("The indexof()return the index\n index of e in Hello is="+str.indexOf("e"));
+}
+function lastindexof() 
+{ 
+      str="Hello";
+	  alert("The lastIndexOf() return the index from right side\nindex of l in Hello is="+ str.lastIndexOf("l")); 
+}
+function search() 
+{ 
+      str="Hello";
+	  alert("It search charcter in given string and return index\nstring is Hello\nif we enter H, it returns="+str.search("H")); 
+} 
+function replace() 
+{ 
+      str="Hello";
+	  alert("string is Hello\n Hel replace with Hi=" + str.replace("Hel","Hi")); 
+}
+function substr() 
+{ 
+      str="Hello";
+	  alert("string is Hello\nIf we enter (0,3) it returns="+str.substr(0,3)); 
+} 
+function slice()
+{
+     str="hello";
+	 alert("string is hello \n if we enter (0,4), it return ="+ str.slice(0,4));
+}
+function tolowercase()
+{
+     str="hello";
+	 alert("string hello in lower case= "+str.toLowerCase());
+}
+function touppercase()
+{
+     str="hello";
+	 alert("string hello in upper case= "+str.toUpperCase());
+}
+function trim()
+{
+     str="hello";
+	 alert("string hello \n after trim= "+str.trim());
+}
+</script>
+</head>
+
+<body bgcolor="pink">
+<table bgcolor="lightgreen" border="1" class="table"> 
+<form>
+       <h1 align="center">String Function</h1>
+	   <tr> 
+	       <th>Functions</th>
+		   <th>Use</th>
+	  </tr>
+	  <tr>
+	      <th> <input type="button" value="charAt" onclick="charat()"> </th>
+		  <th>It provide the char value present at the specified index.</th>
+	 </tr>
+	 <tr>
+	      <th> <input type="button" value="concat" onclick="concat()"> </th>
+		  <th>It concat two or more string.</th>
+	</tr>
+	<tr>
+	     <th> <input type="button" value="indexOf" onclick="indexof()"> </th>
+		 <th>It display index of given number. </th>
+	</tr>
+	<tr>
+	     <th> <input type="button" value="lastIndexOf" onclick="lastindexof()"> </th>
+		 <th>It display index of given charcat from last position.</th>
+	</tr>
+	<tr>
+	    <th> <input type="button" value="search" onclick="search()"> </th>
+		<th>It search a specified regulat expression in a given string. </th>
+	</tr>
+	<tr>
+	     <th> <input type="button" value="replace" onclick="replace()"> </th>
+	    <th>It replaces a given string with the specified replacement.</th>
+   </tr>
+   <tr>
+        <th> <input type="button" value="substr" onclick="substr()"> </th>
+		<th>It is used to fetch the part of given string.</th>
+   </tr>
+   <tr>
+        <th> <input type="button" value="slice" onclick="slice()"> </th>
+		<th>It is same as substr(). It allows us to assign positive as well as negative index.</th>
+   </tr>
+   <tr>
+       <th> <input type="button" value="toLowerCase" onclick="tolowercase()"> </th>
+	   <th>It convert the given sting into lower case letter.</th>
+   </tr>
+   <tr>
+       <th> <input type="button" value="toUpperCase" onclick="touppercase()"> </th>
+	   <th>It convert the given string into upper case letter.</th>
+   </tr>
+   <tr>
+       <th> <input type="button" value="trim" onclick="trim()"> </th>
+	   <th>Ot trims the white space from the left and right side of the string.</th>
+   </tr>
+ </form>
+ </table>
+</body>
+</html>
